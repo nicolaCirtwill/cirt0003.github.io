@@ -10,16 +10,18 @@ footer {
 }
 
 .site-title {
-    text-decoration: line-through;
+    color: khaki;
 }
 
-#my-image {
-    position: re;
+#my-image{
+    width: fit-content;
+    position: relative;
     box-shadow: 0 0 2px 1px black;
 }
  ul {
     list-style-type: square;
 }
-li:nth-child(odd) {
+div li:nth-child(odd) {
     background-color: lightyellow;
 }
+ 
