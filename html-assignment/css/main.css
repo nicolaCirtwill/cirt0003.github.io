@@ -25,16 +25,19 @@ div li:nth-child(odd) {
     background-color: lightyellow;
 }
 nav a {
+    padding: 5px 5px;
     background-color: honeydew;
     border-style: dotted;
     text-decoration: none;
     color: hotpink;
+    float: right;
+   
 }
 nav ul {
     list-style-type: none;
+    
 }
 a:hover {
     color: magenta;
-    text-decoration: underline;
     background-color: greenyellow;
 }
