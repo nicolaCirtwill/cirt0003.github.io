@@ -24,4 +24,17 @@ footer {
 div li:nth-child(odd) {
     background-color: lightyellow;
 }
- 
+nav a {
+    background-color: honeydew;
+    border-style: dotted;
+    text-decoration: none;
+    color: hotpink;
+}
+nav ul {
+    list-style-type: none;
+}
+a:hover {
+    color: magenta;
+    text-decoration: underline;
+    background-color: greenyellow;
+}
