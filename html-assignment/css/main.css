@@ -1,16 +1,26 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    background-color: #fef9ff;
+    color: #2f242c;
+
 
 }
 
 header,
 footer {
-    background-color: red;
+    background-color: #ceff1a;
+}
+blockquote {
+    background-color: #f46e94;
+    border-color: #ceff1a;
+    border-style: dotted;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .site-title {
-    color: khaki;
+    color: #f46e94;
 }
 
 #my-image{
@@ -22,14 +32,14 @@ footer {
     list-style-type: square;
 }
 div li:nth-child(odd) {
-    background-color: lightyellow;
+    background-color: #a5d8ff;
 }
 nav a {
     padding: 5px 5px;
-    background-color: honeydew;
+    background-color: #a5d8ff;
     border-style: dotted;
     text-decoration: none;
-    color: hotpink;
+    color: #f46e94;
     float: right;
    
 }
@@ -38,6 +48,11 @@ nav ul {
     
 }
 a:hover {
-    color: magenta;
-    background-color: greenyellow;
+    color: #ceff1a;
+    background-color: #f46e94;
+}
+
+a:focus {
+    color: #ceff1a;
+    background-color: #fef9ff;
 }
