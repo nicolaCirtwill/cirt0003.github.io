@@ -1,3 +1,18 @@
-body{
-    color: hotpink;
+body {
+    color: black;
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: white;
+    size: 24pt;
+}
+.navigation {
+    text-transform: uppercase;
+    text-align: justify;
+
+}
+p {
+    color: black;
+    size: 8pt;
 }
