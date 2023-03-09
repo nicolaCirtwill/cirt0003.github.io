@@ -2,15 +2,33 @@ body {
     color: black;
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
 }
+
 h1 {
     color: white;
 }
+
+.header-image {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading{
+    text-align: center;
+    background-image: url(/midterm/images/lone-starfish-wide.jpg) repeat 0;
+}
+
 .navigation {
     text-transform: uppercase;
     text-align: justify;
 
 }
+
+.navigation a:link {
+    text-decoration: none;
+}
+
 p {
     color: black;
 }

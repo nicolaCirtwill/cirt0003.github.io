@@ -10,9 +10,12 @@
 </head>
 
 <body>
+    <div class="">
     <header>
-        <h1>Lone Starfish</h1>
-        <img src="images/lone-starfish-wide.jpg" alt="wide image of single starfish on blue background">
+        <h1 class="main-title">Lone Starfish</h1>
+        <div class="header-image">
+        <img src="images/lone-starfish-wide.jpg" alt="wide image of single starfish on blue background"></div>
+    </div>
         <nav class="navigation">
             <ul>
                 <li><a href="http://home.html">Home</a></li>
@@ -48,6 +51,36 @@
             <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
         </ul>
+    </section>
+    <section>
+        <h3>Contact to Learn More</h3>
+        <form action="contact.html" method="get">
+            <div class="name">
+                <label for="fname">Your Name</label>
+                <input id="fname" name= "yourname" type="text">
+
+            </div>
+            <div class="email">
+                <label for="email">Your Email</label>
+                <input id= "email" name="email" type="text">
+            </div>
+            <div class="message">
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="selection">
+                <h4>Would you Like to Visit the Starfish?</h4>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="reply" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="reply" value="no">
+                <label for="yes">Yes</label>
+                <input type="radio" id="maybe" name="reply" value="maybe">
+            </div>
+            <div>
+                <button type="submit">send</button>
+            </div>
+        </form>
     </section>
     <footer>
         <p>©Lone Starfish</p>
