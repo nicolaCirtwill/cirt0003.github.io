@@ -12,13 +12,11 @@ body {
 .navigation li {
     display: inline;
     text-decoration: none;
-    padding: 20px 100px 20px;
+    padding: 5px 100px 0;
     border-right: black solid;
-    border-width: 100%;
-    text-align: center;
-    text-align: center;
-    
+    text-align: center; 
 }
+/*Link styles*/
 a:link,a:visited{
     text-decoration: none;
     color: black;
@@ -42,7 +40,7 @@ a:link,a:visited{
 /*Heading section*/
 .heading {
     position: relative;
-    max-width: auto;
+    max-width: 100%;
     height: auto;
     display: inline-block;
 }
@@ -86,7 +84,7 @@ a:link,a:visited{
     max-width: 25%;
     display: block;
 }
-/*Forms container*/
+/*Forms Container*/
 .forms {
     max-width: 1000px;
     position: absolute;
@@ -94,7 +92,7 @@ a:link,a:visited{
     top: 0;
     bottom: 0;
 }
-/*Forms body styles*/
+/*Forms body Style*/
 #form {
     position: relative;
     padding: 2%;
@@ -103,7 +101,7 @@ a:link,a:visited{
     display: inline-block;
     max-width: 900px;
 }
-/*Textarea Styles*/
+/*Textarea Style*/
 textarea {
     position: relative;
     display: block;
@@ -114,7 +112,7 @@ textarea {
     box-sizing: border-box;
     resize: none;
 }
-/*Input text area styles*/
+/*Input text area Style*/
 input[type=text] {
     width: 900px;
     padding: 2%;
@@ -131,13 +129,13 @@ button[type=submit] {
     margin: 1% 0;
 
 }
-/*Paragraph style*/
+/*Paragraph Style*/
 p {
     margin: auto;
     color: black;
     padding: 2%;
 }
-/*Heading 2 style*/
+/*Heading 2 Style*/
 h2 {
     margin: auto 0;
     text-decoration: none;
@@ -145,7 +143,7 @@ h2 {
     font-weight: 500;
     font-size: 2rem;
 }
-/*Heading 3 style*/
+/*Heading 3 Style*/
 h3 {
     margin: auto 0;
     text-decoration: none;
@@ -156,18 +154,11 @@ h3 {
 }
 
 
-
+/*Footer Style*/
 footer {
-    padding: auto;
     display: inline-block;
     background-color: #d8e8e6;
     width: 100%;
     height: auto;
     text-align: right;
-}
-
-.clearfix ::after {
-    content: "";
-    display: block;
-    clear: left;
 }
