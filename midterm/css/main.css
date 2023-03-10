@@ -12,13 +12,14 @@ body {
 .navigation li {
     display: inline;
     text-decoration: none;
-    padding: 10px 100px;
+    padding: 20px 100px 20px;
     border-right: black solid;
+    border-width: 100%;
     text-align: center;
     text-align: center;
     
 }
-.navigation li:visited{
+a:link,a:visited{
     text-decoration: none;
     color: black;
 }
@@ -29,6 +30,7 @@ body {
     color: black;
     font-size: 1.5rem;
     float: inline-start;
+    width: auto;
 
 }
 /*Wrapper to fit body content into*/
