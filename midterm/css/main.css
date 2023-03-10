@@ -7,7 +7,24 @@ body {
     max-width: 1000px;
 
 }
+.navigation li {
+    display: inline;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: black solid;
+    text-align: center;
+    
+}
 
+.navigation{
+    text-transform: uppercase;
+    display: inline-block;
+    color: black;
+    
+    float: inline-start;
+
+}
 .wrapper {
     width: 100%;
     margin: auto;
@@ -78,19 +95,27 @@ body {
     display: block;
 }
 
+.forms {
+    max-width: 1000px;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+}
+
 #form {
     position: relative;
     padding: 2%;
-    margin: auto 0;
+    margin: 2%;
     border: black solid;
     display: inline-block;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 textarea {
     position: relative;
     display: block;
-    min-width: 950px;
+    min-width: 900px;
     height: auto;
     padding: 2%;
     margin: 0px 0;
@@ -99,10 +124,20 @@ textarea {
 }
 
 input[type=text] {
-    width: 950px;
+    width: 900px;
     padding: 2%;
     margin: 0px 0;
     box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: #d8e8e6;
+    border: black solid;
+    color: black;
+    padding: 1%;
+    text-transform: uppercase;
+    margin: 1% 0;
+
 }
 
 p {
