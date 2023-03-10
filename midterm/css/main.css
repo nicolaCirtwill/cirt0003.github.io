@@ -1,3 +1,4 @@
+/*Body of the web page*/
 body {
     color: black;
     background-color: #aad4cf;
@@ -7,6 +8,7 @@ body {
     max-width: 1000px;
 
 }
+/*navigation list elements*/
 .navigation li {
     display: inline;
     text-decoration: none;
@@ -16,7 +18,7 @@ body {
     text-align: center;
     
 }
-
+/*Navigation bar*/
 .navigation{
     text-transform: uppercase;
     display: inline-block;
@@ -25,40 +27,40 @@ body {
     float: inline-start;
 
 }
+/*Wrapper to fit body content into*/
 .wrapper {
     width: 100%;
     margin: auto;
     background-color: #d8e8e6;
 }
-
+/*Heading section*/
 .heading {
     position: relative;
     max-width: auto;
     height: auto;
     display: inline-block;
 }
-
+/*Heading title container*/
 .title-text {
     position: absolute;
     height: 100%;
     text-align: center;
     width: 100%;
 }
-
+/*Setting text on top the image*/
 .title-text:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-
+/*Header Image style*/
 #head-img {
     display: block;
     max-width: 100%;
     height: auto;
-
 }
-
+/*Title text style*/
 #title {
     position: absolute;
     color: white;
@@ -70,23 +72,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-#navigation {
-    text-transform: uppercase;
-    text-align: justify;
-    display: inline-block;
-    padding-left: 5%;
-    padding-right: 5%;
-
-}
-
-.navigation a:link {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-
-}
-
+/*Article Image Style*/
 .img {
     float: left;
     padding: 2%;
@@ -94,7 +80,7 @@ body {
     max-width: 25%;
     display: block;
 }
-
+/*Forms container*/
 .forms {
     max-width: 1000px;
     position: absolute;
@@ -102,7 +88,7 @@ body {
     top: 0;
     bottom: 0;
 }
-
+/*Forms body styles*/
 #form {
     position: relative;
     padding: 2%;
@@ -111,7 +97,7 @@ body {
     display: inline-block;
     max-width: 900px;
 }
-
+/*Textarea Styles*/
 textarea {
     position: relative;
     display: block;
@@ -122,14 +108,14 @@ textarea {
     box-sizing: border-box;
     resize: none;
 }
-
+/*Input text area styles*/
 input[type=text] {
     width: 900px;
     padding: 2%;
     margin: 0px 0;
     box-sizing: border-box;
 }
-
+/*Button Style*/
 button[type=submit] {
     background-color: #d8e8e6;
     border: black solid;
@@ -139,19 +125,19 @@ button[type=submit] {
     margin: 1% 0;
 
 }
-
+/*Paragraph style*/
 p {
     margin: auto;
     color: black;
     padding: 2%;
 }
-
+/*Heading 2 style*/
 h2 {
     margin: auto;
     text-decoration: none;
     padding: 2%;
 }
-
+/*Heading 3 style*/
 h3 {
     margin: auto;
     text-decoration: none;
