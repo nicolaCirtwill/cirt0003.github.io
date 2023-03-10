@@ -12,18 +12,22 @@ body {
 .navigation li {
     display: inline;
     text-decoration: none;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 100px;
     border-right: black solid;
     text-align: center;
+    text-align: center;
     
+}
+.navigation li:visited{
+    text-decoration: none;
+    color: black;
 }
 /*Navigation bar*/
 .navigation{
     text-transform: uppercase;
     display: inline-block;
     color: black;
-    
+    font-size: 1.5rem;
     float: inline-start;
 
 }
@@ -133,15 +137,20 @@ p {
 }
 /*Heading 2 style*/
 h2 {
-    margin: auto;
+    margin: auto 0;
     text-decoration: none;
     padding: 2%;
+    font-weight: 500;
+    font-size: 2rem;
 }
 /*Heading 3 style*/
 h3 {
-    margin: auto;
+    margin: auto 0;
     text-decoration: none;
     padding: 2%;
+    font-weight: 500;
+    font-size: 2rem;
+
 }
 
 
