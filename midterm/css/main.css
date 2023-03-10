@@ -2,13 +2,11 @@ body {
     color: black;
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
-
     margin: 0 auto;
     font-size: medium;
     max-width: 1000px;
 
 }
-
 
 .wrapper {
     width: 100%;
@@ -80,7 +78,32 @@ body {
     display: block;
 }
 
+#form {
+    position: relative;
+    padding: 2%;
+    margin: auto 0;
+    border: black solid;
+    display: inline-block;
+    max-width: 1000px;
+}
 
+textarea {
+    position: relative;
+    display: block;
+    min-width: 950px;
+    height: auto;
+    padding: 2%;
+    margin: 0px 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type=text] {
+    width: 950px;
+    padding: 2%;
+    margin: 0px 0;
+    box-sizing: border-box;
+}
 
 p {
     margin: auto;
@@ -110,6 +133,7 @@ footer {
     height: auto;
     text-align: right;
 }
+
 .clearfix ::after {
     content: "";
     display: block;
