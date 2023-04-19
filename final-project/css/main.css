@@ -123,6 +123,10 @@ ul,li {
 }
 .digital, .marketing, .video, .web, .print {
     background-color: #ffe6ac; /*Yellow*/
-    padding: 0.5rem;;
-    margin-bottom: 0.5rem;;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.digital img, .marketing img, .video img, .web img, .print img{
+    width: 100%;
+    height: auto;
 }
