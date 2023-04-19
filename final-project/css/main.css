@@ -53,20 +53,40 @@ body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
+    
+}
+a:link {
+    text-decoration: none;
 }
 h1 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
 }
+h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+h4 {
+    color: black;
+    font-weight: bold;
+}
 header {
     background-color: #222;
-    padding: 10px;;
+    padding: 10px;
+    text-align: center;
 }
+
 ul,li {
     text-decoration: none;
 }
-.button1 {
+.button1{
     background-color: #c78c06; /* Orange*/
     color: #222;
     border: none;
@@ -76,6 +96,33 @@ ul,li {
     display: inline-block;
     font-size: 1rem;;
 }
+.button1 a:link {
+    text-decoration: none;
+    color: #222;
+}
+.buttona, .buttonb, .buttonc, .buttond, .buttone{
+    background-color: #222; /*Grey*/
+    color: white;
+    border: none;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;;
+}
+.buttona  a:link, .buttonb  a:link, .buttonc  a:link, .buttond a:link, .buttone a:link{
+    text-decoration: none;
+    color: white;
+}
 .about {
     background-color: #ffe6ac;/*Yellow*/
+    padding: 0.5rem;
+}
+.services {
+    padding: 0.5rem;
+}
+.digital, .marketing, .video, .web, .print {
+    background-color: #ffe6ac; /*Yellow*/
+    padding: 0.5rem;;
+    margin-bottom: 0.5rem;;
 }
