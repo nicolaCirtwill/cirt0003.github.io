@@ -136,6 +136,9 @@ table {
 }
 
 /*Start of Website CSS*/
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -379,9 +382,6 @@ iframe {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(6,1fr);
-        grid-template-areas: 
-        "orange orange"
-        "";
     }
     img {
         width: 100%;
