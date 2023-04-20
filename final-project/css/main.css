@@ -4,48 +4,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*Start of Website CSS*/
@@ -53,29 +140,47 @@ body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    
+
 }
+
 a:link {
     text-decoration: none;
 }
+
 h1 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
 h2 {
     font-size: 2rem;
     color: black;
     font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: white;
     font-weight: bold;
 }
-h4 {
+h5 {
     color: black;
     font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 header {
     background-color: #222;
@@ -83,50 +188,104 @@ header {
     text-align: center;
 }
 
-ul,li {
+ul,
+li {
     text-decoration: none;
 }
-.button1{
-    background-color: #c78c06; /* Orange*/
+button {
+    background-color: #222; /*Grey*/
+    color: #c78c06; /*Orange*/
+    border: #c78c06 1px 1px;
+}
+.button1 {
+    background-color: #c78c06;
+    /* Orange*/
     color: #222;
     border: none;
     padding: 20px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
 }
+
 .button1 a:link {
     text-decoration: none;
     color: #222;
 }
-.buttona, .buttonb, .buttonc, .buttond, .buttone{
-    background-color: #222; /*Grey*/
+
+.buttona,
+.buttonb,
+.buttonc,
+.buttond,
+.buttone {
+    background-color: #222;
+    /*Grey*/
     color: white;
     border: none;
     padding: 20px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
 }
-.buttona  a:link, .buttonb  a:link, .buttonc  a:link, .buttond a:link, .buttone a:link{
+
+.buttona a:link,
+.buttonb a:link,
+.buttonc a:link,
+.buttond a:link,
+.buttone a:link {
     text-decoration: none;
     color: white;
 }
+
 .about {
-    background-color: #ffe6ac;/*Yellow*/
+    background-color: #ffe6ac;
+    /*Yellow*/
     padding: 0.5rem;
 }
-.services {
+
+.services,
+.team, .vision{
     padding: 0.5rem;
 }
-.digital, .marketing, .video, .web, .print {
-    background-color: #ffe6ac; /*Yellow*/
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+    background-color: #ffe6ac;
+    /*Yellow*/
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.digital img, .marketing img, .video img, .web img, .print img{
+
+.digital img,
+.marketing img,
+.video img,
+.web img,
+.print img, .vision img, .main-banner{
     width: 100%;
     height: auto;
+}
+
+.john,
+.bob {
+    background-color: #ffe6ac;
+    /*Yellow*/
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.johntxt,
+.bobtxt,
+.digitaltxt,
+.marketingtxt,
+.videotxt,
+.webtxt,
+.printtxt {
+    padding: 0.5rem;
 }
