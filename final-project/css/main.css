@@ -151,8 +151,8 @@ h1 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     line-height: 2rem;
 }
 
@@ -160,8 +160,8 @@ h2 {
     font-size: 2rem;
     color: black;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     line-height: 1rem;
 }
 
@@ -169,8 +169,8 @@ h3 {
     font-size: 1.5rem;
     color: black;
     font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1rem;
 }
 
@@ -179,6 +179,8 @@ h4 {
     color: white;
     font-weight: bold;
     line-height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 h5 {
     color: black;
@@ -186,7 +188,7 @@ h5 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     line-height: 1rem;
-    border: 0px solid #c78c06;
+    border: 0px solid #c78c06; /*Orange*/
     border-bottom-width: 2px;
     background-color: transparent;
 }
@@ -199,16 +201,26 @@ header {
     background-color: #222;
     padding: 10px;
     text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+header a:link {
+    color: #c78c06;
+    line-height: 2rem;
+}
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 1rem;
 }
 
-ul,
-li {
-    text-decoration: none;
+#search {
+    display:flex;
 }
 button {
     background-color: #222; /*Grey*/
     color: #c78c06; /*Orange*/
-    border: #c78c06 solid 1px;
+    border: #c78c06 solid 1px; /*Orange*/
 }
 input, textarea {
     width: 100%;
@@ -216,6 +228,10 @@ input, textarea {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
+.logo {
+    display: flex;
+}
+
 .button1 {
     background-color: #c78c06;
     /* Orange*/
@@ -304,6 +320,10 @@ img {
 }
 .orange {
     background-color: #c78c06;
+    color: #222;
+}
+.orange a:link {
+    color: #222;
 }
 .john,
 .bob {
@@ -322,3 +342,48 @@ img {
 .printtxt {
     padding: 0.5rem;
 }
+table {
+    width: 100%;
+}
+table, th, td {
+    border:  1px #222 solid;
+
+}
+th {
+    background-color: #ffe6ac;
+    padding: 10px;
+    text-align: center;
+}
+td {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+}
+iframe {
+    width: 100%;
+
+}
+.location {
+ margin: 10px;
+}
+@media screen and (min-width:760px) {
+    .wrapper{
+        width: 100%;
+        display: grid;
+
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "orange orange"
+        "";
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
