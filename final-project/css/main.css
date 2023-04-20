@@ -153,6 +153,7 @@ h1 {
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 2rem;
 }
 
 h2 {
@@ -161,6 +162,7 @@ h2 {
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1rem;
 }
 
 h3 {
@@ -169,17 +171,28 @@ h3 {
     font-weight: bold;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    line-height: 1rem;
 }
 
 h4 {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
+    line-height: 1rem;
 }
 h5 {
     color: black;
     font-weight: bold;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+    border: 0px solid #c78c06;
+    border-bottom-width: 2px;
+    background-color: transparent;
+}
+p {
+    line-height: 1rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 header {
@@ -195,7 +208,13 @@ li {
 button {
     background-color: #222; /*Grey*/
     color: #c78c06; /*Orange*/
-    border: #c78c06 1px 1px;
+    border: #c78c06 solid 1px;
+}
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 .button1 {
     background-color: #c78c06;
@@ -209,10 +228,23 @@ button {
     font-size: 1rem;
     ;
 }
+.button2 {
+    background-color: #222;
+    border: #c78c06 1px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+}
 
 .button1 a:link {
     text-decoration: none;
     color: #222;
+}
+.button2 a:link {
+    text-decoration: none;
+    color: white;
 }
 
 .buttona,
@@ -248,7 +280,7 @@ button {
 }
 
 .services,
-.team, .vision{
+.team, .vision, .contact, .hours{
     padding: 0.5rem;
 }
 
@@ -263,15 +295,16 @@ button {
     margin-bottom: 0.5rem;
 }
 
-.digital img,
-.marketing img,
-.video img,
-.web img,
-.print img, .vision img, .main-banner{
+img {
     width: 100%;
     height: auto;
 }
-
+.logo {
+    width: auto;
+}
+.orange {
+    background-color: #c78c06;
+}
 .john,
 .bob {
     background-color: #ffe6ac;
