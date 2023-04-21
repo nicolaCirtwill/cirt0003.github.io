@@ -207,6 +207,12 @@ header {
     text-decoration: none;
     list-style-type: none;
 }
+header:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 header a:link {
     color: #c78c06;
     line-height: 2rem;
@@ -369,21 +375,65 @@ iframe {
 .location {
  margin: 10px;
 }
-@media screen and (min-width:760px) {
-    .wrapper{
-        width: 100%;
+@media screen and (min-width:760px){
+    body {
         display: grid;
+    }
+    .wrapper{
+        max-width: 1200px;
+        height: auto;
+        display: block;
+        margin: auto;
 
     }
-    
-}
-@media screen and (max-width:1200px) {
-    .wrapper{
-        width: 100%;
+    body{
+        display: flex;
+    }
+    header {
+        display: flex;
+    }
+    .about {
         display: grid;
-        grid-template-columns: repeat(6,1fr);
+        
     }
-    img {
-        width: 100%;
+    .services {
+        display: grid;
         height: auto;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "g1 g1 g1 g1 g1 g1"
+        "d1 d1 d1 d2 d2 d2"
+        "d3 d3 d4 d4 d5 d5";
+
     }
+    .services h2 {
+        grid-area: g1;
+    }
+    .digital {
+        width: auto;
+        height: auto;
+        grid-area: d1;
+    }
+    .marketing {
+        width: auto;
+        height: auto;
+        grid-area: d2;
+    }
+    .video {
+        width: auto;
+        height: auto;
+        grid-area: d3;
+    }
+    .web {
+        width: auto;
+        height: auto;
+        grid-area: d4;
+    }
+    .print {
+        width: auto;
+        height: auto;
+        grid-area: d5;
+    }
+}
