@@ -151,6 +151,7 @@ a:link {
     text-decoration: none;
 }
 
+/* Text and font styles */
 h1 {
     font-size: 3rem;
     color: white;
@@ -205,6 +206,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
+/* Header */
 header {
     background-color: #222;
     padding: 30px;
@@ -226,6 +228,11 @@ header a:link {
     padding: 10px;
 }
 
+.logo {
+    display: flex;
+}
+
+/* transparent box overlay */
 .transparent {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -236,16 +243,12 @@ header a:link {
     color: white;
 }
 
-footer {
-    background-color: #222;
-    color: #c78c06;
-    padding: 1rem;
-}
-
+/* search */
 #search {
     display: flex;
 }
 
+/* search button styles */
 button {
     background-color: #222;
     /*Grey*/
@@ -255,6 +258,7 @@ button {
     /*Orange*/
 }
 
+/* form styles */
 input,
 textarea {
     width: 100%;
@@ -263,10 +267,7 @@ textarea {
     margin-top: 0.5rem;
 }
 
-.logo {
-    display: flex;
-}
-
+/* button 1 */
 .button1 {
     background-color: #c78c06;
     /* Orange*/
@@ -280,6 +281,7 @@ textarea {
     ;
 }
 
+/* button 2 */
 .button2 {
     background-color: #222;
     border: #c78c06 1px solid;
@@ -300,6 +302,7 @@ textarea {
     color: white;
 }
 
+/* services buttons */
 .buttona,
 .buttonb,
 .buttonc,
@@ -326,12 +329,14 @@ textarea {
     color: white;
 }
 
+/* about colours */
 .about {
     background-color: #ffe6ac;
     /*Yellow*/
     padding: 0.5rem;
 }
 
+/* spacing */
 .services,
 .team,
 .vision,
@@ -360,6 +365,7 @@ img {
     width: auto;
 }
 
+/* vision */
 .vision {
     background-image: url("/images/vision.jpg");
     background-position: center;
@@ -394,6 +400,7 @@ img {
     padding: 0.5rem;
 }
 
+/* table styles */
 table {
     width: 100%;
 }
@@ -417,6 +424,7 @@ td {
     text-align: left;
 }
 
+/* loctions and embed */
 iframe {
     width: 100%;
 
@@ -426,7 +434,16 @@ iframe {
     margin: 10px;
 }
 
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 1rem;
+}
+
+/****************************************************************/
+/* MEDIA QUERIES */
 @media screen and (max-width:760px) {
+
     .orange {
         background-color: #c78c06;
         color: #222;
@@ -437,9 +454,11 @@ iframe {
     }
 }
 
+/* DESKTOP LAYOUT */
 @media screen and (min-width:760px) {
     body {}
 
+    /* wrapper */
     .wrapper {
         max-width: 1200px;
         height: auto;
@@ -447,8 +466,7 @@ iframe {
         margin: 0 auto;
     }
 
-
-
+    /* heading */
     header {
         width: auto;
         display: flex;
@@ -463,6 +481,7 @@ iframe {
         display: block;
     }
 
+    /* nav display*/
     nav ul {
         padding: 10px;
         display: flex;
@@ -486,6 +505,7 @@ iframe {
         height: fit-content;
     }
 
+    /* about section */
     .about {
         display: flex;
         flex-wrap: wrap;
@@ -507,6 +527,7 @@ iframe {
         padding: 10px;
     }
 
+    /* teams section */
     .team {
         display: flex;
         flex-wrap: wrap;
@@ -549,11 +570,13 @@ iframe {
         order: 4;
     }
 
+    /* vision section */
     .vision {
         padding-left: 100px;
         padding-right: 100px;
     }
 
+    /* services section */
     .services {
         display: grid;
         justify-content: center;
@@ -604,6 +627,7 @@ iframe {
         grid-area: d5;
     }
 
+    /* contact section */
     .contact {
         display: flex;
         flex-wrap: wrap;
@@ -632,6 +656,7 @@ iframe {
         flex: auto;
     }
 
+    /* footer */
     footer {
         padding-left: 100px;
         padding-right: 100px;
