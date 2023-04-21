@@ -271,7 +271,7 @@ textarea {
 
 .button2 {
     background-color: #222;
-    border: #c78c06 1px;
+    border: #c78c06 1px solid;
     padding: 20px;
     text-decoration: none;
     text-align: center;
@@ -476,36 +476,40 @@ iframe {
         order:-1;
     }
 
-    .johntxt {
+    .team .johntxt {
         height: auto;
-        flex: auto;
         flex-basis: 50%;
-        order:4;
+        order:2;
  
     }
 
-    .bobtxt {
+    .team .bobtxt {
         height: auto;
-        flex: auto;
         flex-basis: 50%;
-        order: 2;
+        order: 3;
     }
 
-    .john {
+    .team .john {
         height: auto;
         flex-basis: 50%;
-        flex: auto;
         order:1;
     
     }
 
-    .bob {
+    .team .bob {
         height: auto;
         flex-basis: 50%;
-        flex: auto;
-        order: 3;
+        order: 4;
     }
+.vision {
+  background-image: url("/images/vision.jpg");
+  background-position: center;
+  padding: 10px
 
+}
+.vision h4 {
+    
+}
     .services {
         display: grid;
         justify-content: center;
