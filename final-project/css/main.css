@@ -139,6 +139,7 @@ table {
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -185,21 +186,25 @@ h4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 h5 {
     color: black;
     font-weight: bold;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     line-height: 1rem;
-    border: 0px solid #c78c06; /*Orange*/
+    border: 0px solid #c78c06;
+    /*Orange*/
     border-bottom-width: 2px;
     background-color: transparent;
 }
+
 p {
     line-height: 1rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
+
 header {
     background-color: #222;
     padding: 10px;
@@ -207,16 +212,19 @@ header {
     text-decoration: none;
     list-style-type: none;
 }
+
 header:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
+
 header a:link {
     color: #c78c06;
     line-height: 2rem;
 }
+
 footer {
     background-color: #222;
     color: #c78c06;
@@ -224,19 +232,26 @@ footer {
 }
 
 #search {
-    display:flex;
+    display: flex;
 }
+
 button {
-    background-color: #222; /*Grey*/
-    color: #c78c06; /*Orange*/
-    border: #c78c06 solid 1px; /*Orange*/
+    background-color: #222;
+    /*Grey*/
+    color: #c78c06;
+    /*Orange*/
+    border: #c78c06 solid 1px;
+    /*Orange*/
 }
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
+
 .logo {
     display: flex;
 }
@@ -253,6 +268,7 @@ input, textarea {
     font-size: 1rem;
     ;
 }
+
 .button2 {
     background-color: #222;
     border: #c78c06 1px;
@@ -267,6 +283,7 @@ input, textarea {
     text-decoration: none;
     color: #222;
 }
+
 .button2 a:link {
     text-decoration: none;
     color: white;
@@ -305,7 +322,10 @@ input, textarea {
 }
 
 .services,
-.team, .vision, .contact, .hours{
+.team,
+.vision,
+.contact,
+.hours {
     padding: 0.5rem;
 }
 
@@ -324,16 +344,13 @@ img {
     width: 100%;
     height: auto;
 }
+
 .logo {
     width: auto;
 }
-.orange {
-    background-color: #c78c06;
-    color: #222;
-}
-.orange a:link {
-    color: #222;
-}
+
+
+
 .john,
 .bob {
     background-color: #ffe6ac;
@@ -351,86 +368,176 @@ img {
 .printtxt {
     padding: 0.5rem;
 }
+
 table {
     width: 100%;
 }
-table, th, td {
-    border:  1px #222 solid;
+
+table,
+th,
+td {
+    border: 1px #222 solid;
 
 }
+
 th {
     background-color: #ffe6ac;
     padding: 10px;
     text-align: center;
 }
+
 td {
     background-color: white;
     padding: 10px;
     text-align: left;
 }
+
 iframe {
     width: 100%;
 
 }
+
 .location {
- margin: 10px;
+    margin: 10px;
 }
-@media screen and (min-width:760px){
-    body {
-        display: grid;
+@media screen and (max-width:760px){
+    .orange {
+        background-color: #c78c06;
+        color: #222;
     }
-    .wrapper{
-        max-width: 1200px;
+    
+    .orange a:link {
+        color: #222;
+    }
+}
+@media screen and (min-width:760px) {
+
+
+    .wrapper {
+        width: 1200px;
         height: auto;
-        display: block;
-        margin: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    body {
+        display: flex;
+    }
+
+    header {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    header a:link {
+        padding: 10px;
+        display: block
+        ;
+    }
+    #main {
+        width: 100%;
+        height:auto;
+        position: absolute;
+    }
+    .orange {
+        display: flex;
+        height: fit-content;
+    }
+    #button {
 
     }
-    body{
-        display: flex;
-    }
-    header {
-        display: flex;
-    }
+
     .about {
         display: grid;
-        
+
     }
-    .services {
-        display: grid;
+
+    .team {
+        display: flex;
+        justify-content: center;
         height: auto;
         grid-gap: 10px;
         padding: 10px;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-areas: 
-        "g1 g1 g1 g1 g1 g1"
-        "d1 d1 d1 d2 d2 d2"
-        "d3 d3 d4 d4 d5 d5";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "t1 t1"
+            "j1 j2"
+            "b2 b1";
+    }
+
+    .team h2 {
+        grid-area: t1;
+    }
+
+    .johntxt {
+        width: auto;
+        height: auto;
+        grid-area: j2;
+    }
+
+    .bobtxt {
+        width: auto;
+        height: auto;
+        grid-area: b2;
+    }
+
+    #john {
+        width: auto;
+        height: auto;
+        grid-area: j1;
+    }
+
+    #bob {
+        width: auto;
+        height: auto;
+        grid-area: b1;
+    }
+
+    .services {
+        display: grid;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "g1 g1 g1 g1 g1 g1"
+            "d1 d1 d1 d2 d2 d2"
+            "d3 d3 d4 d4 d5 d5";
 
     }
+
     .services h2 {
         grid-area: g1;
     }
+
     .digital {
         width: auto;
         height: auto;
         grid-area: d1;
     }
+
     .marketing {
         width: auto;
         height: auto;
         grid-area: d2;
     }
+
     .video {
         width: auto;
         height: auto;
         grid-area: d3;
     }
+
     .web {
         width: auto;
         height: auto;
         grid-area: d4;
     }
+
     .print {
         width: auto;
         height: auto;
