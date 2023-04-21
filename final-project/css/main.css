@@ -225,11 +225,13 @@ header a:link {
     background-image: url("/images/main-banner.jpg");
     padding: 10px;
 }
+
 .transparent {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     max-width: 1200px;
 }
+
 .heading p {
     color: white;
 }
@@ -436,9 +438,7 @@ iframe {
 }
 
 @media screen and (min-width:760px) {
-    body {
-
-    }
+    body {}
 
     .wrapper {
         max-width: 1200px;
@@ -462,12 +462,14 @@ iframe {
         padding: 10px;
         display: block;
     }
+
     nav ul {
-        padding:10px;
+        padding: 10px;
         display: flex;
         flex-direction: row;
-    
+
     }
+
     .heading {
         padding-left: 100px;
         padding-right: 100px;
@@ -495,7 +497,7 @@ iframe {
 
     }
 
-   #about-us {
+    #about-us {
         flex-basis: 50%;
         max-width: 50%;
     }
@@ -629,6 +631,7 @@ iframe {
     .contact .form {
         flex: auto;
     }
+
     footer {
         padding-left: 100px;
         padding-right: 100px;
