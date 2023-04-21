@@ -145,7 +145,6 @@ body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-
 }
 
 a:link {
@@ -208,30 +207,29 @@ p {
 
 header {
     background-color: #222;
-    padding: 10px;
+    padding: 30px;
+    height: auto;
     text-align: center;
     text-decoration: none;
     list-style-type: none;
 }
 
-header:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 header a:link {
     color: #c78c06;
-    line-height: 2rem;
+    line-height: 1rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .heading {
     background-image: url("/images/main-banner.jpg");
-    background-color: #222;
     padding: 10px;
 }
-
+.transparent {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    max-width: 1200px;
+}
 .heading p {
     color: white;
 }
@@ -439,12 +437,11 @@ iframe {
 
 @media screen and (min-width:760px) {
     body {
-        margin: 0 auto;
+
     }
 
     .wrapper {
-        max-width: 100%;
-        width: 1200px;
+        max-width: 1200px;
         height: auto;
         display: flex;
         margin: 0 auto;
@@ -456,12 +453,24 @@ iframe {
         width: auto;
         display: flex;
         flex-direction: row;
-        padding: 10px;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     header a:link {
         padding: 10px;
         display: block;
+    }
+    nav ul {
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .heading {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     #main {
@@ -481,6 +490,8 @@ iframe {
         flex-direction: row;
         height: auto;
         max-width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
 
     }
 
@@ -500,6 +511,9 @@ iframe {
         flex-direction: row;
         max-width: 100%;
         width: 1200px;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .team h2 {
@@ -533,7 +547,10 @@ iframe {
         order: 4;
     }
 
-    .vision h4 {}
+    .vision {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 
     .services {
         display: grid;
@@ -541,7 +558,8 @@ iframe {
         height: auto;
         width: auto;
         grid-gap: 10px;
-        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
             "g1 g1 g1 g1 g1 g1"
@@ -588,6 +606,8 @@ iframe {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .contact .hours {
@@ -608,5 +628,9 @@ iframe {
 
     .contact .form {
         flex: auto;
+    }
+    footer {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
