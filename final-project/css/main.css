@@ -225,6 +225,8 @@ header a:link {
 
 .heading {
     background-image: url("/images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 10px;
 }
 
@@ -368,6 +370,7 @@ img {
 /* vision */
 .vision {
     background-image: url("/images/vision.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     padding: 10px
 }
