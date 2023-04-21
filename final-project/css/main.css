@@ -349,14 +349,22 @@ img {
     width: auto;
 }
 
+.johntxt {
+    background-color: #ffe6ac;
+    margin-bottom: 0.5rem;
+    /*Yellow*/
+}
 
+.bobtxt {
+    background-color: #ffe6ac;
+
+    margin-bottom: 0.5rem;
+    /*Yellow*/
+}
 
 .john,
 .bob {
     background-color: #ffe6ac;
-    /*Yellow*/
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .johntxt,
@@ -400,29 +408,32 @@ iframe {
 .location {
     margin: 10px;
 }
-@media screen and (max-width:760px){
+
+@media screen and (max-width:760px) {
     .orange {
         background-color: #c78c06;
         color: #222;
     }
-    
+
     .orange a:link {
         color: #222;
     }
 }
-@media screen and (min-width:760px) {
 
+@media screen and (min-width:760px){
+    body {
+        margin: 0 auto;
+    }
 
     .wrapper {
+        max-width: 100%;
         width: 1200px;
         height: auto;
         display: flex;
         margin: 0 auto;
     }
 
-    body {
-        display: flex;
-    }
+
 
     header {
         width: auto;
@@ -433,20 +444,18 @@ iframe {
 
     header a:link {
         padding: 10px;
-        display: block
-        ;
+        display: block;
     }
+
     #main {
         width: 100%;
-        height:auto;
-        position: absolute;
+        height: auto;
+        position: relative;
     }
+
     .orange {
         display: flex;
         height: fit-content;
-    }
-    #button {
-
     }
 
     .about {
@@ -456,43 +465,45 @@ iframe {
 
     .team {
         display: flex;
-        justify-content: center;
-        height: auto;
-        grid-gap: 10px;
-        padding: 10px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "t1 t1"
-            "j1 j2"
-            "b2 b1";
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+        width:1200px;
     }
 
     .team h2 {
-        grid-area: t1;
+        flex-basis: 100%;
+        order:-1;
     }
 
     .johntxt {
-        width: auto;
         height: auto;
-        grid-area: j2;
+        flex: auto;
+        flex-basis: 50%;
+        order:4;
+ 
     }
 
     .bobtxt {
-        width: auto;
         height: auto;
-        grid-area: b2;
+        flex: auto;
+        flex-basis: 50%;
+        order: 2;
     }
 
-    #john {
-        width: auto;
+    .john {
         height: auto;
-        grid-area: j1;
+        flex-basis: 50%;
+        flex: auto;
+        order:1;
+    
     }
 
-    #bob {
-        width: auto;
+    .bob {
         height: auto;
-        grid-area: b1;
+        flex-basis: 50%;
+        flex: auto;
+        order: 3;
     }
 
     .services {
@@ -542,5 +553,26 @@ iframe {
         width: auto;
         height: auto;
         grid-area: d5;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .contact .hours {
+        flex-basis: 100%;
+        order: 1;
+    }
+    .contact h2 {
+        flex-basis: 100%;
+        order: -1;
+    }
+    .contact .location {
+        flex: auto;
+        height: min-content;
+
+    }
+    .contact .form {
+      flex: auto;
     }
 }
